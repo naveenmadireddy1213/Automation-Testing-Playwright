@@ -1,8 +1,33 @@
-
-# Playwright
+# Dependencies
 node_modules/
+.pnp/
+.pnp.js
+
+# Playwright Specific
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+playwright-log.txt
+*.zip
+
+# Environment variables and secrets
+.env
+.env.*
+! .env.example
+auth.json
+user-state.json
+
+# Build and coverage outputs
+/dist/
+/coverage/
+/.next/
+/out/
+
+# IDE and System files
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.swp
