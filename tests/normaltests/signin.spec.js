@@ -51,5 +51,4 @@ test("login with valid credetials", async ({ page }) => {
               .locator(".btn")
               .click();
 
-   
-  })
+})
