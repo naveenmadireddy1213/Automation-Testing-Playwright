@@ -7,7 +7,7 @@ test("first test but navigate to new page and assert new page title", async ({ p
     await page.goto("https://rahulshettyacademy.com/")
 
     await expect(page).toHaveTitle("Rahul Shetty Academy | QA Automation, Playwright, AI Testing & QA Online Training");
-    
+
     // 1. Create the promise listener HERE (This was missing!)
     const popupPromise = page.waitForEvent('popup');
 
@@ -21,5 +21,5 @@ test("first test but navigate to new page and assert new page title", async ({ p
     // 5. Assert the title of the NEW page
     await expect(newPage).toHaveTitle('Rahul Shetty Academy');
 
-    
 });
+
